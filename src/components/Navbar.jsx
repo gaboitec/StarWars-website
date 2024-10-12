@@ -1,4 +1,7 @@
-export const CardsCarousel = () => {
+import imagen from '../assets/images/isBlanco.png';
+import {Link} from 'react-router-dom';
+
+export const Navbar = () => {
 
     return(
         <>
@@ -30,9 +33,9 @@ export const CardsCarousel = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <Link className="nav-link" to="/Home">
                         Home
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item dropdown">
                         <a
@@ -45,24 +48,24 @@ export const CardsCarousel = () => {
                         Listas
                         </a>
                         <ul className="dropdown-menu">
-                        <li onClick={() => setDataType("people")}>
-                            <a className="dropdown-item" href="#">Personajes</a>
+                        <li>
+                            <Link className="dropdown-item" to="/people">Personajes</Link>
                         </li>
-                        <li onClick={() => setDataType("planets")}>
-                            <a className="dropdown-item" href="#">Planetas</a>
+                        <li>
+                            <Link className="dropdown-item" to="/planets">Planetas</Link>
                         </li>
-                        <li onClick={() => setDataType("films")}>
-                            <a className="dropdown-item" href="#">Películas</a>
+                        <li>
+                            <Link className="dropdown-item" to="/films">Películas</Link>
                         </li>
-                        <li onClick={() => setDataType("starships")}>
-                            <a className="dropdown-item" href="#">Naves Espaciales</a>
+                        <li>
+                            <Link className="dropdown-item" to="/starships">Naves Espaciales</Link>
                         </li>
                         </ul>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">
-                        Contact
-                        </a>
+                        <Link className="nav-link">
+                        Login
+                        </Link>
                     </li>
                     </ul>
                 </div>

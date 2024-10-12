@@ -1,14 +1,4 @@
-/* Contenedor de fondo */
-.home-container {
-    background: url('./assets/fondo4.jpg'); /* Fondo principal */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    padding: 2rem;
-  }
-  
-  /* Caja de contenido central */
+/* Caja de contenido central */
   .content-box {
     padding: 2rem;
     border-radius: 8px;

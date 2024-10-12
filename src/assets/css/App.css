@@ -6,13 +6,13 @@
 }
 
 .bg-image {
-  background-image: url('./assets/fondo2.jpg'); /* Ruta de tu imagen */
+  background-image: url('../images/fondo2.jpg'); /* Ruta de tu imagen */
   background-size: cover; /* Hace que la imagen cubra toda la pantalla */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Altura de la pantalla completa */
   width: 100vw; /* Ancho completo de la pantalla */
   position: relative;/* Coloca la imagen en el fondo */
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .navbar {

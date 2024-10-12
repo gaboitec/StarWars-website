@@ -17,17 +17,13 @@ export const CardsCarousel = ({datasw, dataType}) => {
 
     return (
         <>
-        <h1>{dataType}</h1>
-        <div>
-            {console.log(dataType)}
             <Slider {...settings}>
             {
                 datasw.map((data,index) => {
-                    return <div key={index}><Card dataCard={data}/></div>
+                    return <div key={index}><Card dataCard={data} dataT={dataType}/></div>
                 })
             }
             </Slider>
-        </div>
         </>
     )
 }
