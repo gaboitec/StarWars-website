@@ -1,24 +1,28 @@
 import '../assets/css/Home.css';
-import personaje from '../assets/images/soldado.png';
+import {Link} from 'react-router-dom';
 
 export const Home = () => {
     return(
-        <div className="content-box text-white">
-            <div className="character-image">
-            <img
-                src={personaje}
-                alt="Stormtrooper"
-                className="img-fluid"
-            />
+    <div className="home-page">
+        {/* Fondo con imagen completa */}
+        <div className="background-image">
+            <div className="center-content">
+            <h1 className="logo">STAR WARS</h1>
+            <p className="subtitle">The Force Awakens</p>
             </div>
-            
-            <div className="character-info mt-3">
-            <h2 className="title">Stormtrooper CD:1000343</h2>
-            <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-            </div>
+            {/* Menú Lateral */}
+            <nav className="side-menu">
+            <ul>
+                <li><Link className='side-li' to="/">Home</Link></li>
+                <li><Link className='side-li' to="/people">People</Link></li>
+                <li><Link className='side-li' to="/planets">Planets</Link></li>
+                <li><Link className='side-li' to="/films">Films</Link></li>
+                <li><Link className='side-li' to="/starships">Starships</Link></li>
+            </ul>
+            </nav>
+            {/* Indicador de Scroll */}
+            <p className="scroll-indicator">Scroll to Explore</p>
         </div>
+    </div>
     )
 }
