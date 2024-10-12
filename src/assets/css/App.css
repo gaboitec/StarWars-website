@@ -1,0 +1,75 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+}
+
+.bg-image {
+  background-image: url('./assets/fondo2.jpg'); /* Ruta de tu imagen */
+  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Altura de la pantalla completa */
+  width: 100vw; /* Ancho completo de la pantalla */
+  position: relative;/* Coloca la imagen en el fondo */
+  padding-top: 50px;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.3); /* Fondo transparente */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-menu .dropdown-item:hover {
+  color: #f1c40f; /* Color dorado al pasar el cursor */
+}
+
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+  border: none;
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.tarjeta {
+  transition: transform 0.5s ease, filter 0.5s ease;
+  text-align: center;
+  padding: 20px;
+  background: rgba(131, 148, 155, 0.07);
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+.tarjeta .card-head{
+  background: rgba(94, 112, 119, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.tarjeta .card-body{
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.slick-center .tarjeta {
+  transform: scale(1.2); /* La tarjeta central se agranda */
+  filter: none; /* Sin difuminar */
+  margin: 100px 10px;
+}
+
+.slick-slide:not(.slick-center) .tarjeta {
+  transform: scale(0.8); /* Las tarjetas laterales se reducen */
+  filter: blur(2px); /* Las tarjetas laterales se difuminan */
+  margin: 100px 10px;
+}
