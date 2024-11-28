@@ -13,11 +13,12 @@
   width: 100vw; /* Ancho completo de la pantalla */
   position: relative;/* Coloca la imagen en el fondo */
   padding-top: 70px;
+  min-height: 100vh;
 }
 
 .navbar {
   background: rgba(0, 0, 0, 0.3); /* Fondo transparente */
-  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  filter: blur(10px); /* Efecto de desenfoque */
 }
 
 .navbar .nav-link,
@@ -49,12 +50,12 @@
   text-align: center;
   padding: 20px;
   background: rgba(131, 148, 155, 0.07);
-  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  filter: blur(10px); /* Efecto de desenfoque */
 }
 
 .tarjeta .card-head{
   background: rgba(94, 112, 119, 0.4);
-  backdrop-filter: blur(10px);
+  filter: blur(10px);
 }
 
 .tarjeta .card-body{
